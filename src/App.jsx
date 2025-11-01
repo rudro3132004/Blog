@@ -6,6 +6,7 @@ import TourSpotDetails from './Page/TourSpotDetails';
 import Footer from './Components/Footer';
 import BusRentCardBox from './Page/BusRentCardBox';
 import HotelList from './Page/HotelList';
+import CreatedBy from './Components/CreatedBy';
 import { useEffect } from 'react';
 import ScrollToTop from './Components/ScrollToTop';
 
@@ -25,6 +26,7 @@ export default function App() {
   return (
     <div className='relative'>
       <div className="w-full fixed top-0 z-50"><NavBar/></div>
+      <CreatedBy />
       <ScrollToTop/>
        <Routes>
           <Route path="/Blog" element={<HomePage />} />
